@@ -1,0 +1,53 @@
+/* Uvoz fontova sa Google Fonts servisa */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Dancing+Script&family=Kalnia&family=Libre+Baskerville:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+/* Resetovanje margina i paddinga na svim elementima, postavljanje globalnog fonta */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif; /* Koristi se kao rezervni font ako fontovi iz Google Fonts nisu dostupni */
+    box-sizing: border-box;
+}
+
+/* Stilizacija tijela stranice */
+body{
+    background: #78c1f3; /* Plava pozadina */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stilizacija glavnog kontejnera */
+.container{
+    width: 650px;
+    height: 450px;
+    background-color: #fff; /* Bijela pozadina */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Stilizacija tekstualnog polja za unos teksta */
+textarea{
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 22px;
+    outline: none;
+}
+
+/* Stilizacija reda sa rezultatima */
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Stilizacija span elemenata unutar reda */
+.row span{
+    font-weight: bold;
+    font-size: 20px;
+}

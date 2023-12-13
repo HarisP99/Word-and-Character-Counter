@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tagovi za karakter set i viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Naslov stranice -->
+    <title>Word Counter</title>
+    
+    <!-- Povezivanje sa eksternim CSS fajlom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Glavni kontejner -->
+    <div class="container">
+        <!-- Naslov aplikacije -->
+        <h2>BROJAC RIJECI</h2>
+
+        <!-- Tekstualno polje za unos teksta -->
+        <textarea id="wordCounter"></textarea>
+
+        <!-- Red sa rezultatima -->
+        <div class="row">
+            <!-- Broj riječi -->
+            <label><span id="Totalwords">0</span> <br>RIJECI <br>&nbsp;</label>
+
+            <!-- Broj karaktera sa razmacima -->
+            <label><span id="TotalCharWithSpace">0</span> <br>KARAKTERI (sa space)</label>
+
+            <!-- Broj karaktera bez razmaka -->
+            <label><span id="TotalCharWithoutSpace">0</span> <br> KARAKTERI (bez space)</label>
+
+            <!-- Broj specijalnih karaktera -->
+            <label><span id="TotalSpecialChar">0</span> <br>SPECIJALNI KARAKTERI</label>
+
+            <!-- Vrijeme čitanja -->
+            <label><span id="TotalReadTime">0</span> <br>minuta(s) (Read Time)</label>
+        </div>
+    </div>
+    
+    <!-- Povezivanje sa eksternim JavaScript fajlom -->
+    <script src="script.js"></script>
+</body>
+</html>
